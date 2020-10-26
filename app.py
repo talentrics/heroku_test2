@@ -1,10 +1,9 @@
-from flask import Flask
-app = Flask(__name__)
+from dash.react import dash
 
-@app.route('/')
-def index():
-    return 'Index Page'
+my_app = dash('my app')
 
-@app.route('/hello')
-def hello():
-    return 'Hello, World'
+from dash_components import h1, PlotlyGraph
+
+my_app.layout = h1("testing the app")
+
+my_app.server.run(debug=True)
