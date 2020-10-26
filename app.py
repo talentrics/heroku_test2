@@ -52,6 +52,7 @@ def tutorial():
    return render_template('/tutorial.html')
 
 @app.route('/graph')
+def graph():
    return render_template('/graph.html')
 
 if __name__ == '__main__':
