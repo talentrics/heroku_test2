@@ -7,3 +7,4 @@ pip
 gunicorn
 flask
 Jinja2
+dash
