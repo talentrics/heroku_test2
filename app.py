@@ -57,18 +57,13 @@ def graph():
 
     return 'Hello Flask app'
 
-app = dash.Dash(
+plot_app = dash.Dash(
     __name__,
     server=server,
     routes_pathname_prefix='/dash/'
 )
 
-app.layout = html.Div("My Dash app")
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
-   
-   return render_template('graph.html', script=script, div=div)
+plot_app.layout = html.Div("My Dash app")
 
 if __name__ == '__main__':
    app.run(port=33507)
