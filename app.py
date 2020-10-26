@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request,redirect
+import dash
 
 import pandas as pd
 from threading import Thread
@@ -6,14 +7,6 @@ import simplejson as json
 import requests
 import datetime
 import jinja2
-
-from bokeh.embed import server_document, components 
-from bokeh.layouts import column
-from bokeh.models import ColumnDataSource, HoverTool, TextInput, CustomJS
-from bokeh.io import curdoc
-from bokeh.plotting import figure, output_file, show
-from bokeh.server.server import Server
-from bokeh.themes import Theme
 
 app = Flask(__name__)
 
