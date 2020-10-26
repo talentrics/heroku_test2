@@ -1,2 +1,9 @@
+pandas
+simplejson
+requests
+datetime
+bokeh
+pip
 gunicorn
-dash
+flask
+Jinja2
