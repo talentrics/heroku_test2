@@ -46,9 +46,6 @@ def tutorial():
 
 @app.route('/graph')
 def graph():
-   with open('{{ url_for('static', filename='onet_tsne.csv') }}') as csv_file:
-    df = pd.read_csv('onet_tsne.csv')
-    print(df.head())
    return render_template('/graph.html')
 
 if __name__ == '__main__':
